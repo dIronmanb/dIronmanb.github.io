@@ -247,6 +247,8 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
+
+# 여기 category와 tag를 주석처리하면 더 이상 블로그에서 이들을 표시하지 않는다.
 category_archive:
   type: liquid
   path: /categories/
@@ -284,7 +286,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
 
